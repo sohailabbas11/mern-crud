@@ -5,6 +5,8 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
 const Books = require('./schema');
+const cors = require('cors');
+app.use(cors());
 
 
 app.get('/books', async (req, res) => {
